@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Dunai Aparicio Sanchez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-head">
+    <a class="brand" href="index.html">Dunai Aparicio Sanchez</a>
+    <p class="tagline">Demand Gen · Marketing Ops · Analytics</p>
+  </header>
+
+  <nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Work Experience</h2>
+    <p class="page-intro">Event marketing, marketing operations, and client services experience across tech, retail, and nonprofit organizations in the Bay Area.</p>
+
+    <div class="job">
+      <h3>Meta Connect Event Product Demo Specialist (Contract), Channel Partners</h3>
+      <p class="meta">Menlo Park, CA — September 2026</p>
+      <ul class="bullets">
+        <li>Served as an onsite product specialist for the Ray-Ban Meta Gen 3 launch at Meta Connect 2026. Ran hands on demos for industry tech insiders on the event floor.</li>
+        <li>Executed the Gen 3 pilot loaner program as a live product experience. Trained by Meta's product marketing team on specs, the onboarding flow, and launch campaign messaging; guided attendees end to end from demo through setup of newly purchased glasses.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Marketing &amp; Logistics Coordinator, RH</h3>
+      <p class="meta">Palo Alto, CA — June 2025 to Present</p>
+      <ul class="bullets">
+        <li>Coordinated end to end logistics and operational support for interior design projects, ensuring on time delivery across cross functional field teams.</li>
+        <li>Managed daily Excel and Salesforce pipelines to track gallery inventory and shipments, maintaining a 99% data accuracy rate for internal operations and client relations.</li>
+        <li>Analyzed supplier performance metrics and product availability, identifying auditing opportunities that optimized inventory.</li>
+        <li>Resolved high priority client supply chain issues and inventory discrepancies as primary point of contact, improving client resolution time.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Residential Services Coordinator, LifeMoves</h3>
+      <p class="meta">San Jose, CA — August 2019 to July 2023</p>
+      <ul class="bullets">
+        <li>Managed a 100+ record client database in Voyager and Clarity, ensuring documentation met compliance standards and reducing data entry errors through revised tracking methods; onboarded and trained 3 new hires on both systems.</li>
+        <li>Served as the primary point of contact for facility phone and email inquiries, scheduling and assessing client intakes; supported 20 onsite clients daily with medication distribution, life skills coaching, and conflict resolution.</li>
+      </ul>
+    </div>
+
+    <p class="section-link"><a class="btn" href="Dunai_Sanchez_Resume.pdf" download>Download Resume</a> <a class="btn btn-outline" href="projects.html">View Projects</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dunai Aparicio Sanchez</p>
+  </footer>
+  <script>
+    (function(){
+      var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+      t.addEventListener('click',function(){var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');});
+      l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+    })();
+  </script>
+</body>
+</html>
