@@ -1,36 +1,196 @@
+/* Dunai Aparicio Sanchez — portfolio styles (shared by all pages) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0;
-  background-color: #121212;
-  color: #f4f4f4;
+  background-color: #fdfaf6;
+  color: #3b3b3b;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-nav {
-  background: #1f1f1f;
-  padding: 15px;
+/* Header / hero */
+header {
+  background-color: #e6d5c3;
+  padding: 20px 0;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
-nav a {
-  color: #ffca28;
-  margin: 0 15px;
+header h1 {
+  font-size: 2rem;
+  color: #4a3423;
+}
+.headshot {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px auto;
+  border: 3px solid #d1bfa6;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  text-align: left;
+  padding: 32px 20px;
+}
+.hero .headshot { margin: 0; flex-shrink: 0; }
+.hero-text h1 { margin-bottom: 6px; }
+.tagline { font-weight: 500; color: #b08d57; }
+.location { color: #7a6c5d; margin-bottom: 14px; }
+.hero-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.btn {
+  display: inline-block;
+  background-color: #4a3423;
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 24px;
   text-decoration: none;
-  font-weight: 600;
+  font-size: .92rem;
+  font-weight: 500;
+}
+.btn:hover { background-color: #3a2819; }
+.btn-outline { background-color: transparent; color: #4a3423; border: 2px solid #4a3423; }
+.hero-links { font-size: .92rem; color: #7a6c5d; }
+.hero-links a { color: #5c4634; margin: 0 4px; }
+
+/* Subpage header */
+.page-head { padding: 26px 20px; }
+.page-head .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a3423;
+  text-decoration: none;
+}
+.page-head .tagline { margin-top: 2px; }
+
+/* Nav */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fdfaf6;
+  border-bottom: 1px solid #b08d57;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+  padding: 10px 0;
+}
+.nav-links { display: flex; justify-content: center; gap: 20px; }
+nav a {
+  text-decoration: none;
+  color: #4a3423;
+  font-weight: 500;
+}
+nav a:hover { text-decoration: underline; color: #b08d57; }
+nav a.active { color: #b08d57; text-decoration: underline; }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #4a3423;
+  cursor: pointer;
+  padding: 6px 10px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 800px;
+/* Layout */
+main {
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: #1f1f1f;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+section { margin-bottom: 40px; }
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4a3423;
+}
+.page-intro { margin-bottom: 24px; color: #5c4634; }
+
+/* Experience */
+.job { margin-bottom: 28px; }
+.job h3 { font-size: 1.08rem; color: #3b2c1d; }
+.job .meta { color: #7a6c5d; font-style: italic; margin-bottom: 6px; }
+ul.bullets { margin-left: 20px; }
+ul.bullets li { margin-bottom: 6px; }
+.summary-line { margin-bottom: 14px; }
+.section-link { margin-top: 4px; }
+
+/* Projects */
+.project-card {
+  background: #fff9f3;
+  border-left: 4px solid #d1bfa6;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #b08d57;
+  text-decoration: underline;
+}
+.project-full { margin-bottom: 36px; }
+.project-flex { display: flex; gap: 22px; align-items: flex-start; }
+.project-flex .thumb {
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #e6d5c3;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.project-flex .project-body { flex: 1; }
+.project-full h3 { font-size: 1.12rem; color: #3b2c1d; }
+.project-full .meta { color: #7a6c5d; font-style: italic; margin-bottom: 8px; }
+.project-full p { margin-bottom: 10px; }
+.project-full a { color: #b08d57; text-decoration: underline; }
+
+/* Skills */
+.skill-group { margin-bottom: 20px; }
+.skill-group h3 { font-size: 1.05rem; color: #4b382a; margin-bottom: 8px; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill {
+  background: #e6d5c3;
+  color: #3b2c1d;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
-h1, h2 {
-  color: #ffca28;
+/* Contact / footer */
+.contact-info i { margin-right: 8px; color: #4a3423; }
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #a89a90;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  body { padding: 0 10px; }
+  nav { display: block; padding: 6px 8px; }
+  .nav-toggle { display: block; margin-left: auto; }
+  .nav-links { display: none; flex-direction: column; gap: 0; padding: 4px 0 8px; }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 1rem; padding: 10px 12px; border-top: 1px solid #e6d5c3; }
+  main { margin: 20px auto; padding: 16px; }
+  header h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  section { margin-bottom: 30px; }
+  .hero { flex-direction: column; text-align: center; gap: 18px; padding: 24px 8px; }
+  .hero .headshot { width: 120px; height: 120px; }
+  .hero-buttons { justify-content: center; }
+  .contact-info a { overflow-wrap: anywhere; }
+  .project-flex { flex-direction: column; }
+  .project-flex .thumb { width: 100%; }
+  .page-head { text-align: center; }
 }

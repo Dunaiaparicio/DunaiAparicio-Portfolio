@@ -5,137 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dunai Aparicio Sanchez | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fdfaf6;
-      color: #3b3b3b;
-      line-height: 1.6;
-      padding: 0 20px;
-      
-    }
-    header {
-      background-color: #e6d5c3;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 2rem;
-      color: #4a3423;
-    }
-    .headshot {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 15px auto;
-      border: 3px solid #d1bfa6;
-    }
-    nav {
-      background-color: #f1e7de;
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #4a3423;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline; color: #b08d57;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #4a3423;
-    }
-    .project-card {
-      background: #fff9f3;
-      border-left: 4px solid #d1bfa6;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-    }
-    .project-card a {
-      display: inline-block;
-      margin-top: 5px;
-      color: #4a3423;
-      text-decoration: underline; color: #b08d57;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .skill {
-      background: #e6d5c3;
-      color: #3b2c1d;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-    .contact-info i {
-      margin-right: 8px;
-      color: #4a3423;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #a89a90;
-      font-size: 0.9rem;
-    }
-  .hero{display:flex;align-items:center;justify-content:center;gap:32px;text-align:left;padding:32px 20px}.hero .headshot{margin:0;flex-shrink:0}.hero-text h1{margin-bottom:6px}.tagline{font-weight:500;color:#b08d57}.location{color:#7a6c5d;margin-bottom:14px}.hero-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}.btn{display:inline-block;background-color:#4a3423;color:#fff;padding:9px 20px;border-radius:24px;text-decoration:none;font-size:.92rem;font-weight:500}.btn:hover{background-color:#3a2819}.btn-outline{background-color:transparent;color:#4a3423;border:2px solid #4a3423}.hero-links{font-size:.92rem;color:#7a6c5d}.hero-links a{color:#5c4634;margin:0 4px}nav{position:sticky;top:0;z-index:1000;background-color:#fdfaf6;border-bottom:1px solid #b08d57;box-shadow:0 2px 4px rgba(0,0,0,.06)}.nav-toggle{display:none;background:none;border:none;font-size:1.5rem;line-height:1;color:#4a3423;cursor:pointer;padding:6px 10px}.nav-links{display:flex;justify-content:center;gap:20px}.skill-group{margin-bottom:20px}.skill-group h3{font-size:1.05rem;color:#4b382a;margin-bottom:8px}@media(max-width:640px){
-    body{padding:0 10px}
-    nav{display:block;padding:6px 8px}
-    .nav-toggle{display:block;margin-left:auto}
-    .nav-links{display:none;flex-direction:column;gap:0;padding:4px 0 8px}
-    .nav-links.open{display:flex}
-    .nav-links a{font-size:1rem;padding:10px 12px;border-top:1px solid #e6d5c3}
-    main{margin:20px auto;padding:16px}
-    header h1{font-size:1.6rem}
-    h2{font-size:1.3rem}
-    section{margin-bottom:30px}
-    .hero{flex-direction:column;text-align:center;gap:18px;padding:24px 8px}
-    .hero .headshot{width:120px;height:120px}
-    .hero-buttons{justify-content:center}
-    .contact-info a{overflow-wrap:anywhere}
-  }  </style>
 </head>
 <body>
   <header class="hero">
     <img src="profile-photo.jpg" alt="Dunai Aparicio Sanchez" class="headshot" />
     <div class="hero-text"><h1>Dunai Aparicio Sanchez</h1><p class="tagline">Demand Gen · Marketing Ops · Analytics</p><p class="location">Bay Area, CA</p><div class="hero-buttons"><a class="btn" href="Dunai_Sanchez_Resume.pdf" download>Download Resume</a><a class="btn btn-outline" href="#contact">Get in Touch</a></div><p class="hero-links"><a href="https://www.linkedin.com/in/dunai-aparicio/" target="_blank">LinkedIn</a> · <a href="https://github.com/dunaiaparicio" target="_blank">GitHub</a></p></div>
-
-
   </header>
 
   <nav>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -149,52 +33,41 @@
     </section>
 
     <section id="experience">
-      <h2>Work Experience</h2><strong>Meta Connect Event Product Demo Specialist (Contract), Channel Partners <i>Menlo Park, CA, September 2026</i></strong><p>• Onsite product specialist for the Ray-Ban Meta Gen 3 launch at Meta Connect 2026</p><p>• Hands on demos for industry tech insiders on the event floor</p><p>• Executed the Gen 3 pilot loaner program as a live product experience</p>
-      <strong>Marketing & Logistics Coordinator, RH <i>Palo Alto, CA — June 2025 - Present</i></strong><p>• End-to-end logistics coordination for interior design projects.</p><p>• Excel/Salesforce pipeline management at 99% data accuracy.</p><p>• Supplier performance analysis to support operational decisions.</p>
-      <strong>Residential Services Coordinator, LifeMoves <i>San Jose, CA August 2019 - July 2023</i></strong>
-      <p>• Client database management for 100+ records with improved documentation compliance</p>
-      <p>• Facility intake communications and daily support for 20 onsite clients</p>
-      <p>• New-hire training on Voyager and Clarity case management systems</p>
-
+      <h2>Work Experience</h2>
+      <p class="summary-line"><strong>Meta Connect Event Product Demo Specialist (Contract), Channel Partners</strong> <i>Menlo Park, CA, September 2026</i><br>
+      Onsite product specialist for the Ray-Ban Meta Gen 3 launch at Meta Connect 2026; ran hands on demos and executed the Gen 3 pilot loaner program.</p>
+      <p class="summary-line"><strong>Marketing &amp; Logistics Coordinator, RH</strong> <i>Palo Alto, CA, June 2025 to Present</i><br>
+      End to end logistics and operational support for interior design projects; Excel and Salesforce pipelines maintained at 99% data accuracy.</p>
+      <p class="summary-line"><strong>Residential Services Coordinator, LifeMoves</strong> <i>San Jose, CA, August 2019 to July 2023</i><br>
+      Managed a 100+ record client database with improved documentation compliance; daily support for 20 onsite clients; trained new hires on Voyager and Clarity.</p>
+      <p class="section-link"><a class="btn" href="experience.html">View Full Experience</a></p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-card">
-        <strong>Marketing Coordinator</strong> <i>Purdance Studio, February 2025 - April 2025</i>
+        <strong>Marketing Coordinator</strong> <i>Purdance Studio, February 2025 to April 2025</i>
         <p>Produced the annual studio showcase; created Excel-based scheduling and forecasting tool that improved on-time task completion. Led end-to-end production of the showcase, managing logistics, rehearsals, and schedules for 80+ performers both in studio and guest performers. Redesigned WordPress event pages and ran targeted Mailchimp campaigns, boosting email engagement by 20% and driving a 10% increase in ticket sales.</p>
         <p><a href="Purdance-Show-Calculator.xlsx">View the showcase show calculator (Excel)</a></p>
-
       </div>
       <div class="project-card">
-        <strong>PFLAG Membership & Retention Strategy</strong> <i>PFLAG, 2024 - Present</i>
+        <strong>PFLAG Membership &amp; Retention Strategy</strong> <i>PFLAG, 2024 to Present</i>
         <p>Designed new branded marketing materials, including business cards and messaging guidelines. Developing a chapter toolkit to support member onboarding and scalable event promotion.</p>
         <p><a href="PFLAG-Branding-Marketing-Initiative-2025.pdf" target="_blank">View the Branding &amp; Marketing Initiative 2025 deck (PDF)</a></p>
-        
       </div>
       <div class="project-card">
-        <strong>Market Research & Product Development </strong> <i>SJSU, Marketing in New Ventures 2023</i>
+        <strong>Market Research &amp; Product Development</strong> <i>SJSU, Marketing in New Ventures 2023</i>
         <p>Collaborated with a team of fellow students to assess market demand and user needs for a new product concept. Conducted surveys, analyzed data, and helped shape product positioning. Presented the findings to a panel of marketing professionals and the project was awarded first place.</p>
         <p><a href="SJSU-Market-Analysis-Presentation.pdf" target="_blank">View the Market Analysis Presentation deck (PDF)</a></p>
-        
       </div>
+      <p class="section-link"><a class="btn" href="projects.html">View All Projects</a></p>
     </section>
-    
-    <section id="education"><h2>Education</h2><p><strong>B.S., Business Administration</strong> — San Jose State University, San Jose, CA</p></section><section id="skills">
+
+    <section id="education"><h2>Education</h2><p><strong>B.S., Business Administration</strong> — San Jose State University, San Jose, CA</p></section>
+
+    <section id="skills">
       <h2>Skills</h2>
-      <div><div class="skill-group"><h3>Marketing</h3><div class="skills"><div class="skill">Market Research</div><div class="skill">SEO</div><div class="skill">Google Ads</div><div class="skill">HubSpot</div><div class="skill">Mailchimp</div><div class="skill">Event Marketing</div></div></div><div class="skill-group"><h3>Data & Analytics</h3><div class="skills"><div class="skill">Data Analysis</div><div class="skill">SQL</div><div class="skill">Tableau</div><div class="skill">Database Management</div></div></div><div class="skill-group"><h3>Tools & Platforms</h3><div class="skills"><div class="skill">Salesforce</div><div class="skill">Marketo</div><div class="skill">HTML</div><div class="skill">WordPress</div><div class="skill">Project Coordination</div></div></div>
-
-
-
-
-
-
-
-
-
-
-
-
+      <div><div class="skill-group"><h3>Marketing</h3><div class="skills"><div class="skill">Market Research</div><div class="skill">SEO</div><div class="skill">Google Ads</div><div class="skill">HubSpot</div><div class="skill">Mailchimp</div><div class="skill">Event Marketing</div></div></div><div class="skill-group"><h3>Data &amp; Analytics</h3><div class="skills"><div class="skill">Data Analysis</div><div class="skill">SQL</div><div class="skill">Tableau</div><div class="skill">Database Management</div></div></div><div class="skill-group"><h3>Tools &amp; Platforms</h3><div class="skills"><div class="skill">Salesforce</div><div class="skill">Marketo</div><div class="skill">HTML</div><div class="skill">WordPress</div><div class="skill">Project Coordination</div></div></div>
       </div>
     </section>
 
@@ -212,9 +85,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Dunai Aparicio Sanchez</p>
+    <p>&copy; 2026 Dunai Aparicio Sanchez</p>
   </footer>
-<script>
+  <script>
     (function(){
       var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
       t.addEventListener('click',function(){var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');});
