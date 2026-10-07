@@ -1,26 +1,92 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Dunai Aparicio Sanchez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="page-head">
+    <a class="brand" href="index.html">Dunai Aparicio Sanchez</a>
+    <p class="tagline">Demand Gen · Marketing Ops · Analytics</p>
+  </header>
+
   <nav>
-    <a href="index.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Projects</h1>
-    <ul>
-      <li><strong>Purdance Marketing Campaign</strong> – <a href="#">View Project</a></li>
-      <li><strong>PFLAG Membership Strategy</strong> – <a href="#">View Project</a></li>
-      <li><strong>Market Research & Product Dev</strong> – <a href="#">View Project</a></li>
-    </ul>
-  </div>
+  <main>
+    <h2>Projects</h2>
+    <p class="page-intro">Selected marketing projects with the actual deliverables attached: a production calculator built in Excel, a branding initiative deck, and an award winning market research study.</p>
+
+    <div class="project-full">
+      <div class="project-flex">
+        <a href="Purdance-Show-Calculator.xlsx"><img class="thumb" src="preview-calculator.jpg" alt="Preview of the Purdance showcase show calculator spreadsheet"></a>
+        <div class="project-body">
+          <h3>Marketing Coordinator, Purdance Studio</h3>
+          <p class="meta">San Jose, CA — February 2025 to April 2025</p>
+          <p><strong>Digital Marketing:</strong> Redesigned WordPress event pages and launched targeted Mailchimp campaigns, boosting email engagement by 20% and driving a 10% increase in ticket sales.</p>
+          <p><strong>Project Management:</strong> Directed the annual studio showcase for 80+ performers, managing logistics, rehearsals, and schedules for performers in studio and guest performers. Engineered an Excel based scheduling and forecasting tool (the show calculator) that improved on time task completion: it totals show running time from per act durations, builds the performance run order with cumulative start times, and schedules tech rehearsals back to back from a single start time.</p>
+          <p><a href="Purdance-Show-Calculator.xlsx">Download the showcase show calculator (Excel)</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-full">
+      <div class="project-flex">
+        <a href="PFLAG-Branding-Marketing-Initiative-2025.pdf" target="_blank"><img class="thumb" src="preview-pflag.jpg" alt="Cover of the PFLAG Branding and Marketing Initiative 2025 deck"></a>
+        <div class="project-body">
+          <h3>PFLAG Membership &amp; Retention Strategy</h3>
+          <p class="meta">PFLAG San Jose — 2024 to Present</p>
+          <p><strong>Strategy Development:</strong> Analyzed 3 years of membership data to identify trends in engagement and drop off; uncovered key insights leading to new retention strategies.</p>
+          <p><strong>Marketing Initiatives:</strong> Designed new branded marketing materials, including business cards and messaging guidelines. Developing a chapter toolkit to support member onboarding and scalable event promotion. The 2025 initiative deck covers physical branding and outreach, digital marketing engagement, and paid media planning.</p>
+          <p><a href="PFLAG-Branding-Marketing-Initiative-2025.pdf" target="_blank">View the Branding &amp; Marketing Initiative 2025 deck (PDF)</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-full">
+      <div class="project-flex">
+        <a href="SJSU-Market-Analysis-Presentation.pdf" target="_blank"><img class="thumb" src="preview-sjsu.jpg" alt="Cover of the SJSU Market Analysis Presentation for Ozone Bodycare"></a>
+        <div class="project-body">
+          <h3>Market Research &amp; Product Development, SJSU</h3>
+          <p class="meta">Marketing in New Ventures — 2023</p>
+          <p>Collaborated with a team of fellow students to assess market demand and user needs for a new product concept (Ozone Bodycare). Conducted surveys, analyzed data, and helped shape product positioning.</p>
+          <p>Presented the findings to a panel of marketing professionals and the project was awarded first place.</p>
+          <p><a href="SJSU-Market-Analysis-Presentation.pdf" target="_blank">View the Market Analysis Presentation deck (PDF)</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-full">
+      <h3>Omni Channel Marketing, Lululemon (Forage)</h3>
+      <p class="meta">Professional Development Project — 2024</p>
+      <p>Developed a comprehensive omnichannel digital marketing strategy for Lululemon, focusing on target audience alignment and market positioning.</p>
+      <p>Analyzed metrics from a mock Lululemon ambassador campaign, calculating ROI, conversion rates, and engagement rates to deliver optimization recommendations.</p>
+    </div>
+
+    <p class="section-link"><a class="btn" href="experience.html">View Experience</a> <a class="btn btn-outline" href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dunai Aparicio Sanchez</p>
+  </footer>
+  <script>
+    (function(){
+      var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+      t.addEventListener('click',function(){var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');});
+      l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+    })();
+  </script>
 </body>
 </html>
